@@ -2,19 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>TTMX Dashboard</title>
+    <!-- El nombre que aparecerá en la pestaña del navegador en PC -->
+    <title>PROGRAMACIÓN FAC</title>
     
-    <!-- Configuración PWA (Pantalla Completa obligatoria para iOS y Android) -->
+    <!-- Configuración PWA obligatoria para Pantalla Completa en iOS y Android -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="TTMX">
+    <!-- El nombre que aparecerá debajo del ícono en tu teléfono -->
+    <meta name="apple-mobile-web-app-title" content="PROG FAC">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#dc2626">
     
-    <!-- Íconos y Manifest obligatorios para que Android lo acepte como App Nativa -->
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/1068/1068069.png">
-    <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22TTMX%20Dashboard%22%2C%22short_name%22%3A%22TTMX%22%2C%22display%22%3A%22standalone%22%2C%22start_url%22%3A%22%2F%22%2C%22background_color%22%3A%22%23f3f4f6%22%2C%22theme_color%22%3A%22%23dc2626%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F1068%2F1068069.png%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fpng%22%7D%5D%7D">
+    <!-- Enlace a la imagen que acabas de subir a GitHub -->
+    <link rel="apple-touch-icon" href="icono.jpg">
+    <link rel="icon" href="icono.jpg">
+    
+    <!-- Manifest con el nombre y el ícono oficial para que Android lo instale como App Nativa -->
+    <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22PROGRAMACI%C3%93N%20FAC%22%2C%22short_name%22%3A%22PROG%20FAC%22%2C%22display%22%3A%22standalone%22%2C%22start_url%22%3A%22%2F%22%2C%22background_color%22%3A%22%23f3f4f6%22%2C%22theme_color%22%3A%22%23dc2626%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22icono.jpg%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fjpeg%22%7D%5D%7D">
 
     <style>
         body, html {
@@ -22,8 +27,8 @@
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden; 
-            background-color: #f3f4f6; 
+            overflow: hidden; /* Evita que la página completa haga scroll, solo el calendario lo hará */
+            background-color: #f3f4f6; /* Color de fondo gris claro mientras carga */
         }
         iframe {
             width: 100vw;
